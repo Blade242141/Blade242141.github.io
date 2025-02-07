@@ -1,0 +1,46 @@
+<div [attr.id]="cTA26Id" class="thq-section-padding">
+  <div class="thq-section-max-width">
+    <div class="cta26-accent2-bg">
+      <div class="cta26-accent1-bg">
+        <div class="cta26-container2">
+          <div class="cta26-content">
+            <span class="thq-heading-2">
+              <ng-container>
+                <ng-template #defaultHeading1>
+                  <div class="cta26-fragment1">
+                    <span class="cta26-text3">Richard (Owner/Technician)</span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+                ></ng-container>
+              </ng-container>
+            </span>
+            <p class="thq-body-large">
+              <ng-container>
+                <ng-template #defaultContent1>
+                  <div class="cta26-fragment2">
+                    <span class="cta26-text4">
+                      A Master of Computer Science graduate from Newcastle
+                      University, with experience repairing a range of different
+                      devices.
+                      <span [innerHTML]="raweyi1"></span>
+                    </span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+                ></ng-container>
+              </ng-container>
+            </p>
+          </div>
+          <img
+            [attr.alt]="imageAlt2"
+            [attr.src]="imageSrc2"
+            class="cta26-image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

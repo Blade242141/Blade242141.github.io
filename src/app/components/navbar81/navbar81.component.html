@@ -1,0 +1,629 @@
+<header class="navbar81-container1" [ngClass]="rootClassName">
+  <header data-thq="thq-navbar" class="navbar81-navbar-interactive">
+    <a routerLink="/" class="navbar81-navlink1">
+      <img [attr.alt]="logoAlt" [attr.src]="logoSrc" class="navbar81-image1" />
+    </a>
+    <div data-thq="thq-navbar-nav" class="navbar81-desktop-menu">
+      <nav class="navbar81-links1">
+        <a
+          [attr.href]="link1Url"
+          class="navbar81-link11 thq-link thq-body-small"
+        >
+          <ng-container>
+            <ng-template #defaultLink1>
+              <div><span>/home</span></div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link1 ? link1 : defaultLink1"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a [attr.href]="link2Url" class="thq-link thq-body-small">
+          <ng-container>
+            <ng-template #defaultLink2>
+              <div><span>/services</span></div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link2 ? link2 : defaultLink2"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a
+          [attr.href]="link3Url"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="navbar81-link31 thq-link thq-body-small"
+        >
+          <ng-container>
+            <ng-template #defaultLink3>
+              <div><span>/about</span></div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link3 ? link3 : defaultLink3"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a
+          [attr.href]="link4Url"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="navbar81-link32 thq-link thq-body-small"
+        >
+          <ng-container>
+            <ng-template #defaultLink31>
+              <div class="navbar81-fragment21">
+                <span class="navbar81-text21">/contact</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link31 ? link31 : defaultLink31"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <div
+          (click)="link5DropdownVisible = !link5DropdownVisible"
+          class="navbar81-link4-dropdown-trigger"
+        >
+          <div class="navbar81-icon-container1">
+            <div *ngIf="link5DropdownVisible" class="navbar81-container2">
+              <svg viewBox="0 0 1024 1024" class="navbar81-icon10">
+                <path d="M298 426h428l-214 214z"></path>
+              </svg>
+            </div>
+            <div *ngIf="!link5DropdownVisible" class="navbar81-container3">
+              <svg viewBox="0 0 1024 1024" class="navbar81-icon12">
+                <path d="M426 726v-428l214 214z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="navbar81-buttons1">
+        <a
+          href="https://google.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="navbar81-link10"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="navbar81-icon14 icon-temp"
+          >
+            <g fill="currentColor">
+              <path
+                d="M12 4a8 8 0 0 0-6.895 12.06l.569.718l-.697 2.359l2.32-.648l.379.243A8 8 0 1 0 12 4M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382l1.426-4.829l-.006-.007l-.033-.055A9.96 9.96 0 0 1 2 12"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+              ></path>
+              <path
+                d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1 1 0 0 0-.34-.075c-.196 0-.362.098-.49.291c-.146.217-.587.732-.723.886c-.018.02-.042.045-.057.045c-.013 0-.239-.093-.307-.123c-1.564-.68-2.751-2.313-2.914-2.589c-.023-.04-.024-.057-.024-.057c.005-.021.058-.074.085-.101c.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711c-.158-.377-.366-.552-.655-.552c-.027 0 0 0-.112.005c-.137.005-.883.104-1.213.311c-.35.22-.94.924-.94 2.16c0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537c1.412.564 2.081.63 2.461.63c.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276c.192-.534.243-1.117.115-1.329c-.088-.144-.239-.216-.43-.308"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/owl.repairs/"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="navbar81-link12"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="navbar81-icon18 icon-temp"
+          >
+            <path
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61572188412625"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="navbar81-link13"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="navbar81-icon20 icon-temp"
+          >
+            <path
+              d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20 20 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div data-thq="thq-burger-menu" class="navbar81-burger-menu">
+      <svg viewBox="0 0 1024 1024" class="navbar81-icon22">
+        <path
+          d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+        ></path>
+      </svg>
+    </div>
+    <div data-thq="thq-mobile-menu" class="navbar81-mobile-menu">
+      <div class="navbar81-nav">
+        <div class="navbar81-top">
+          <a routerLink="/" class="navbar81-navlink2">
+            <img
+              [attr.alt]="logoAlt"
+              [attr.src]="logoSrc"
+              class="navbar81-logo"
+            />
+          </a>
+          <div data-thq="thq-close-menu" class="navbar81-close-menu">
+            <svg viewBox="0 0 1024 1024" class="navbar81-icon24">
+              <path
+                d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <nav class="navbar81-links2">
+          <a
+            [attr.href]="link1Url"
+            class="navbar81-link14 thq-link thq-body-small"
+          >
+            <ng-container>
+              <ng-template #defaultLink1>
+                <div class="navbar81-fragment17">
+                  <span class="navbar81-text17">/home</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="link1 ? link1 : defaultLink1"
+              ></ng-container>
+            </ng-container>
+          </a>
+          <a [attr.href]="link2Url" class="thq-link thq-body-small">
+            <ng-container>
+              <ng-template #defaultLink2>
+                <div class="navbar81-fragment13">
+                  <span class="navbar81-text13">/services</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="link2 ? link2 : defaultLink2"
+              ></ng-container>
+            </ng-container>
+          </a>
+          <a
+            [attr.href]="link3Url"
+            class="navbar81-link33 thq-link thq-body-small"
+          >
+            <ng-container>
+              <ng-template #defaultLink3>
+                <div class="navbar81-fragment29">
+                  <span class="navbar81-text29">/about</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="link3 ? link3 : defaultLink3"
+              ></ng-container>
+            </ng-container>
+          </a>
+          <div class="navbar81-link4-accordion">
+            <div
+              (click)="link5AccordionOpen = !link5AccordionOpen"
+              class="navbar81-trigger"
+            >
+              <span class="thq-link thq-body-small">
+                <ng-container>
+                  <ng-template #defaultLink4>
+                    <div class="navbar81-fragment14">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <span class="navbar81-text14">/contact</span>
+                      </a>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="link4 ? link4 : defaultLink4"
+                  ></ng-container>
+                </ng-container>
+              </span>
+              <div class="navbar81-icon-container2">
+                <div *ngIf="link5AccordionOpen" class="navbar81-container4">
+                  <svg viewBox="0 0 1024 1024" class="navbar81-icon26">
+                    <path d="M298 426h428l-214 214z"></path>
+                  </svg>
+                </div>
+                <div *ngIf="!link5AccordionOpen" class="navbar81-container5">
+                  <svg viewBox="0 0 1024 1024" class="navbar81-icon28">
+                    <path d="M426 726v-428l214 214z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="link5AccordionOpen" class="navbar81-container6">
+              <a [attr.href]="linkUrlPage1">
+                <div class="navbar81-menu-item1">
+                  <img
+                    [attr.alt]="page1ImageAlt"
+                    [attr.src]="page1ImageSrc"
+                    class="navbar81-page1-image1"
+                  />
+                  <div class="navbar81-content1">
+                    <span class="navbar81-page11 thq-body-large">
+                      <ng-container>
+                        <ng-template #defaultPage1>
+                          <div class="navbar81-fragment27">
+                            <span class="navbar81-text27">Page One</span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page1 ? page1 : defaultPage1"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                    <span class="thq-body-small">
+                      <ng-container>
+                        <ng-template #defaultPage1Description>
+                          <div class="navbar81-fragment26">
+                            <span class="navbar81-text26">
+                              Page One Description
+                            </span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page1Description ? page1Description : defaultPage1Description"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a [attr.href]="linkUrlPage2">
+                <div class="navbar81-menu-item2">
+                  <img
+                    [attr.alt]="page2ImageAlt"
+                    [attr.src]="page2ImageSrc"
+                    class="navbar81-page2-image1"
+                  />
+                  <div class="navbar81-content2">
+                    <span class="navbar81-page21 thq-body-large">
+                      <ng-container>
+                        <ng-template #defaultPage2>
+                          <div class="navbar81-fragment10">
+                            <span class="navbar81-text10">Page Two</span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page2 ? page2 : defaultPage2"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                    <span class="thq-body-small">
+                      <ng-container>
+                        <ng-template #defaultPage2Description>
+                          <div class="navbar81-fragment30">
+                            <span class="navbar81-text30">
+                              Page Two Description
+                            </span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page2Description ? page2Description : defaultPage2Description"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a [attr.href]="linkUrlPage3">
+                <div class="navbar81-menu-item3">
+                  <img
+                    [attr.alt]="page3ImageAlt"
+                    [attr.src]="page3ImageSrc"
+                    class="navbar81-page3-image1"
+                  />
+                  <div class="navbar81-content3">
+                    <span class="navbar81-page31 thq-body-large">
+                      <ng-container>
+                        <ng-template #defaultPage3>
+                          <div class="navbar81-fragment12">
+                            <span class="navbar81-text12">Page Three</span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page3 ? page3 : defaultPage3"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                    <span class="thq-body-small">
+                      <ng-container>
+                        <ng-template #defaultPage3Description>
+                          <div class="navbar81-fragment22">
+                            <span class="navbar81-text22">
+                              Page Three Description
+                            </span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page3Description ? page3Description : defaultPage3Description"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a [attr.href]="linkUrlPage4">
+                <div class="navbar81-menu-item4">
+                  <img
+                    [attr.alt]="page4ImageAlt"
+                    [attr.src]="page4ImageSrc"
+                    class="navbar81-page4-image1"
+                  />
+                  <div class="navbar81-content4">
+                    <span class="navbar81-page41 thq-body-large">
+                      <ng-container>
+                        <ng-template #defaultPage4>
+                          <div class="navbar81-fragment28">
+                            <span class="navbar81-text28">Page Four</span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page4 ? page4 : defaultPage4"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                    <span class="thq-body-small">
+                      <ng-container>
+                        <ng-template #defaultPage4Description>
+                          <div class="navbar81-fragment15">
+                            <span class="navbar81-text15">
+                              Page Four Description
+                            </span>
+                          </div>
+                        </ng-template>
+                        <ng-container
+                          *ngTemplateOutlet="page4Description ? page4Description : defaultPage4Description"
+                        ></ng-container>
+                      </ng-container>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="navbar81-buttons2">
+          <a
+            href="https://google.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="navbar81-link19"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="navbar81-icon30 icon-temp"
+            >
+              <g fill="currentColor">
+                <path
+                  d="M12 4a8 8 0 0 0-6.895 12.06l.569.718l-.697 2.359l2.32-.648l.379.243A8 8 0 1 0 12 4M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382l1.426-4.829l-.006-.007l-.033-.055A9.96 9.96 0 0 1 2 12"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                ></path>
+                <path
+                  d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1 1 0 0 0-.34-.075c-.196 0-.362.098-.49.291c-.146.217-.587.732-.723.886c-.018.02-.042.045-.057.045c-.013 0-.239-.093-.307-.123c-1.564-.68-2.751-2.313-2.914-2.589c-.023-.04-.024-.057-.024-.057c.005-.021.058-.074.085-.101c.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711c-.158-.377-.366-.552-.655-.552c-.027 0 0 0-.112.005c-.137.005-.883.104-1.213.311c-.35.22-.94.924-.94 2.16c0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537c1.412.564 2.081.63 2.461.63c.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276c.192-.534.243-1.117.115-1.329c-.088-.144-.239-.216-.43-.308"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/owl.repairs/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="navbar81-link20"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="navbar81-icon34 icon-temp"
+            >
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61572188412625"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="navbar81-link23"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="navbar81-icon36 icon-temp"
+            >
+              <path
+                d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20 20 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      *ngIf="link5DropdownVisible"
+      class="navbar81-container7 thq-box-shadow"
+    >
+      <div class="navbar81-link5-menu-list">
+        <a [attr.href]="linkUrlPage11">
+          <div class="navbar81-menu-item5">
+            <img
+              [attr.alt]="page1ImageAlt1"
+              [attr.src]="page1ImageSrc1"
+              class="navbar81-page1-image2 thq-img-ratio-1-1"
+            />
+            <div class="navbar81-content5">
+              <span class="navbar81-page12 thq-body-large">
+                <ng-container>
+                  <ng-template #defaultPage11>
+                    <div class="navbar81-fragment18">
+                      <span class="navbar81-text18">Home</span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page11 ? page11 : defaultPage11"
+                  ></ng-container>
+                </ng-container>
+              </span>
+              <span class="thq-body-small">
+                <ng-container>
+                  <ng-template #defaultPage1Description1>
+                    <div class="navbar81-fragment16">
+                      <span class="navbar81-text16">
+                        Welcome to Night Owl Repairs, your go-to for laptop and
+                        computer repairs after hours!
+                      </span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page1Description1 ? page1Description1 : defaultPage1Description1"
+                  ></ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a [attr.href]="linkUrlPage21">
+          <div class="navbar81-menu-item6">
+            <img
+              [attr.alt]="page2ImageAlt1"
+              [attr.src]="page2ImageSrc1"
+              class="navbar81-page2-image2 thq-img-ratio-1-1"
+            />
+            <div class="navbar81-content6">
+              <span class="navbar81-page22 thq-body-large">
+                <ng-container>
+                  <ng-template #defaultPage21>
+                    <div class="navbar81-fragment25">
+                      <span class="navbar81-text25">Services</span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page21 ? page21 : defaultPage21"
+                  ></ng-container>
+                </ng-container>
+              </span>
+              <span class="thq-body-small">
+                <ng-container>
+                  <ng-template #defaultPage2Description1>
+                    <div class="navbar81-fragment24">
+                      <span class="navbar81-text24">
+                        We offer a range of repair services for laptops and
+                        computers, including local collection and diagnosis from
+                        £10.
+                      </span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page2Description1 ? page2Description1 : defaultPage2Description1"
+                  ></ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a [attr.href]="linkUrlPage31">
+          <div class="navbar81-menu-item7">
+            <img
+              [attr.alt]="page3ImageAlt1"
+              [attr.src]="page3ImageSrc1"
+              class="navbar81-page3-image2 thq-img-ratio-1-1"
+            />
+            <div class="navbar81-content7">
+              <span class="navbar81-page32 thq-body-large">
+                <ng-container>
+                  <ng-template #defaultPage31>
+                    <div class="navbar81-fragment11">
+                      <span class="navbar81-text11">About Us</span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page31 ? page31 : defaultPage31"
+                  ></ng-container>
+                </ng-container>
+              </span>
+              <span class="thq-body-small">
+                <ng-container>
+                  <ng-template #defaultPage3Description1>
+                    <div class="navbar81-fragment19">
+                      <span class="navbar81-text19">
+                        Learn more about the team behind Night Owl Repairs.
+                      </span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page3Description1 ? page3Description1 : defaultPage3Description1"
+                  ></ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a [attr.href]="linkUrlPage41">
+          <div class="navbar81-menu-item8">
+            <img
+              [attr.alt]="page4ImageAlt1"
+              [attr.src]="page4ImageSrc1"
+              class="navbar81-page4-image2 thq-img-ratio-1-1"
+            />
+            <div class="navbar81-content8">
+              <span class="navbar81-page42 thq-body-large">
+                <ng-container>
+                  <ng-template #defaultPage41>
+                    <div class="navbar81-fragment23">
+                      <span class="navbar81-text23">Contact</span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page41 ? page41 : defaultPage41"
+                  ></ng-container>
+                </ng-container>
+              </span>
+              <span class="thq-body-small">
+                <ng-container>
+                  <ng-template #defaultPage4Description1>
+                    <div class="navbar81-fragment20">
+                      <span class="navbar81-text20">
+                        Get in touch with us for your laptop and computer repair
+                        needs. We&apos;re here to help!
+                      </span>
+                    </div>
+                  </ng-template>
+                  <ng-container
+                    *ngTemplateOutlet="page4Description1 ? page4Description1 : defaultPage4Description1"
+                  ></ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    (click)="link5DropdownVisible = false"
+    *ngIf="link5DropdownVisible"
+    class="navbar81-container8"
+  ></div>
+</header>
